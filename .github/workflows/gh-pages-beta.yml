@@ -24,7 +24,7 @@ jobs:
         run: hugo --minify
 
       - name: Update Config
-        run: sed -i '' "s/hugo-testing\//&beta\//" config.toml
+        run: sed -i "s/hugo-testing\//&beta\//" config.toml
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
